@@ -1,54 +1,5 @@
+export default
 {  
-  game: {
-    // Game
-    id: 1,
-    date: 0,
-    time: 0,
-    teamOneStart: true,
-    tournament: ?,
-    rosters: [
-      {
-        [
-    	    1: {
-    	      name: 'P1N',
-    	      gender: 'M',
-    	    },
-    	    2: {
-    	      name: 'P2N',
-    	      gender: 'F',
-    	    },
-    	    3: {
-    	      name: 'P3N',
-    	      gender: 'M',
-    	    },
-    	    4: {
-    	      name: 'P4N',
-    	      gender: 'F',
-    	    },
-    	    5: {
-    	      name: 'P5N',
-    	      gender: 'M',
-    	    },
-    	    6: {
-    	      name: 'P6N',
-    	      gender: 'M',
-    	    },
-    	    7: {
-    	      name: 'P7N',
-    	      gender: 'F',
-    	    },
-        ],
-        // Other team
-        [],
-      }
-    ],
-    lines: [
-      {
-  
-      },
-    ],
-  },
-  
   team: {
     // Team
     id: 1,
@@ -86,6 +37,16 @@
         gender: 'F',
       },
     ],
+    positions: [
+      {
+        uuid: 1,
+        name: 'Handler',
+      },
+      {
+        uuid: 2,
+        name: 'Cutter',
+      },
+    ]
     offenses: [
       {
       /* id to UUID */
@@ -145,6 +106,56 @@
             name: 'Cutter',
           },
         ],
+      },
+    ],
+  },
+
+  game: {
+    // Game
+    id: 1,
+    date: 0,
+    time: 0,
+    teamOneStart: true,
+    tournament: ?,
+    rosters: [
+      {
+        [
+    	    1: {
+    	      name: 'P1N',
+    	      gender: 'M',
+    	    },
+    	    2: {
+    	      name: 'P2N',
+    	      gender: 'F',
+    	    },
+    	    3: {
+    	      name: 'P3N',
+    	      gender: 'M',
+    	    },
+    	    4: {
+    	      name: 'P4N',
+    	      gender: 'F',
+    	    },
+    	    5: {
+    	      name: 'P5N',
+    	      gender: 'M',
+    	    },
+    	    6: {
+    	      name: 'P6N',
+    	      gender: 'M',
+    	    },
+    	    7: {
+    	      name: 'P7N',
+    	      gender: 'F',
+    	    },
+        ],
+        // Other team
+        [],
+      }
+    ],
+    lines: [
+      {
+  
       },
     ],
   },
