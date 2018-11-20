@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
-import LineCaller from 'LinceCaller.js.';
-import data from 'json.js';
+import React from 'react';
+import LineCaller from './lineCaller.js';
+import data from './json.js';
 
 ReactDOM.render(
   <LineCaller data={data} />,

@@ -1,5 +1,5 @@
 export default
-{  
+{
   team: {
     // Team
     id: 1,
@@ -8,33 +8,35 @@ export default
     gender_division: 'Mixed',
     players: [
     /* id to UUID */
-      1: {
-        name: 'P1N',
-        gender: 'M',
-      },
-      2: {
-        name: 'P2N',
-        gender: 'F',
-      },
-      3: {
-        name: 'P3N',
-        gender: 'M',
-      },
-      4: {
-        name: 'P4N',
-        gender: 'F',
-      },
-      5: {
-        name: 'P5N',
-        gender: 'M',
-      },
-      6: {
-        name: 'P6N',
-        gender: 'M',
-      },
-      7: {
-        name: 'P7N',
-        gender: 'F',
+      {
+        1: {
+  	      name: 'P1N',
+  	      gender: 'M',
+  	    },
+        2: {
+  	      name: 'P2N',
+  	      gender: 'F',
+  	    },
+        3: {
+  	      name: 'P3N',
+  	      gender: 'M',
+  	    },
+        4: {
+  	      name: 'P4N',
+  	      gender: 'F',
+  	    },
+        5: {
+  	      name: 'P5N',
+  	      gender: 'M',
+  	    },
+        6: {
+  	      name: 'P6N',
+  	      gender: 'M',
+  	    },
+        7: {
+  	      name: 'P7N',
+  	      gender: 'F',
+  	    },
       },
     ],
     positions: [
@@ -46,7 +48,7 @@ export default
         uuid: 2,
         name: 'Cutter',
       },
-    ]
+    ],
     offenses: [
       {
       /* id to UUID */
@@ -116,42 +118,40 @@ export default
     date: 0,
     time: 0,
     teamOneStart: true,
-    tournament: ?,
+    tournament: {},
     rosters: [
       {
-        [
-    	    1: {
-    	      name: 'P1N',
-    	      gender: 'M',
-    	    },
-    	    2: {
-    	      name: 'P2N',
-    	      gender: 'F',
-    	    },
-    	    3: {
-    	      name: 'P3N',
-    	      gender: 'M',
-    	    },
-    	    4: {
-    	      name: 'P4N',
-    	      gender: 'F',
-    	    },
-    	    5: {
-    	      name: 'P5N',
-    	      gender: 'M',
-    	    },
-    	    6: {
-    	      name: 'P6N',
-    	      gender: 'M',
-    	    },
-    	    7: {
-    	      name: 'P7N',
-    	      gender: 'F',
-    	    },
-        ],
-        // Other team
-        [],
-      }
+        1: {
+  	      name: 'P1N',
+  	      gender: 'M',
+  	    },
+      2: {
+  	      name: 'P2N',
+  	      gender: 'F',
+  	    },
+        3: {
+  	      name: 'P3N',
+  	      gender: 'M',
+  	    },
+        4: {
+  	      name: 'P4N',
+  	      gender: 'F',
+  	    },
+        5: {
+  	      name: 'P5N',
+  	      gender: 'M',
+  	    },
+        6: {
+  	      name: 'P6N',
+  	      gender: 'M',
+  	    },
+        7: {
+  	      name: 'P7N',
+  	      gender: 'F',
+  	    },
+      },
+      // Other team
+      {},
     ],
     lines: [
       {
@@ -159,4 +159,4 @@ export default
       },
     ],
   },
-}
+};
