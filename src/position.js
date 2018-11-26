@@ -18,7 +18,7 @@ function Position(props) {
   $(props.allPositions).each(function(key, position) {
     console.log(key);
     console.log(position);
-    options.push(<option value={position.name} />);
+    options.push(<option value={position.name}>{position.name}</option>);
   });
   return (
     <div
@@ -34,7 +34,6 @@ function Position(props) {
         }
       />
       <select className="position">
-//        <option value={props.position.uuid} selected="selected" />
         {options}
       </select>
     </div>
@@ -44,14 +43,23 @@ function Position(props) {
 function autofill (tag, options) {
   $(options).each(function(key, option) {
     console.log(option);
-    if (option.value.indexOf(tag.value) > 0) {
+    let matchPos = option.value.indexOf(tag.value);
+    if (matchPos > 0) {
       // autocomplete tag.value (using highlighted)
-
+      $(tag).selectRange(matchPos, tag.value.length);
       // select autocompleted option
       option.attr('selected', 'selected');
       // remove old selected attr?
     }
   });
 }
+
+$.fn.selectRange = function(start, end) {
+  var e = document.getElementById($(this).attr('id')); // I don't know why... but $(this) don't want to work today :-/
+  if (!e) return;
+  else if (e.setSelectionRange) { e.focus(); e.setSelectionRange(start, end); } /* WebKit */ 
+  else if (e.createTextRange) { var range = e.createTextRange(); range.collapse(true); range.moveEnd('character', end); range.moveStart('character', start); range.select(); } /* IE */
+  else if (e.selectionStart) { e.selectionStart = start; e.selectionEnd = end; }
+};
 
 export default Position;

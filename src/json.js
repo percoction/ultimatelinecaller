@@ -41,10 +41,12 @@ export default
     ],
     positions: [
       {
+        key: 1,
         uuid: 1,
         name: 'Handler',
       },
       {
+        key: 2,
         uuid: 2,
         name: 'Cutter',
       },
@@ -52,6 +54,7 @@ export default
     offenses: [
       {
       /* id to UUID */
+        key: 1,
         id: 1,
         name: 'Ho Stack',
         positions: [
@@ -66,7 +69,7 @@ export default
             name: 'Handler',
           },
           {
-            name: 'Cutter',
+            name: 'Handler',
           },
           {
             name: 'Cutter',
@@ -82,6 +85,7 @@ export default
     ],
     defenses: [
       {
+        key: 2,
         id: 2,
         name: 'Person D',
         positions: [
